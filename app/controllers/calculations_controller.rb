@@ -25,8 +25,7 @@ class CalculationsController < ApplicationController
     render("calculations/square_root.html.erb")
   end
   def payment
-    @apr = params[:basis_points].to_f
-    @interest_rate = number_to_percentage(@apr)
+    @interest_rate = params[:basis_points].to_f
     interest_rate_per_month = @interest_rate/(12*100)
     @number_years = params[:number_of_years].to_i
     @pv = params[:present_value].to_f

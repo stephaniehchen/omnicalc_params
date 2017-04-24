@@ -6,7 +6,7 @@ Payment Results
   <label> APR
   </label>
   <br>
-   <%= @interest_rate %>
+   <%= number_to_percentage(@interest_rate, precision: 2) %>
  </h5>
  </div>
  <div>
@@ -22,7 +22,7 @@ Payment Results
   <label> Principal
   </label>
   <br>
-   <%= @pv %>
+   <%= number_to_currency(@pv) %>
 </h5>
 </div>
 </div>
@@ -31,7 +31,7 @@ Payment Results
   <label> Payment
   </label>
   <br>
-   <%= @monthly_payment %>
+   <%= number_to_currency(@monthly_payment) %>
 </h5>
 </div>
 <h5>
