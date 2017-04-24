@@ -60,6 +60,9 @@ The way it should work is:
  - If I visit a URL of the pattern
 
    ```
+
+<<<<MUST FINISH>>>>>
+
    /flexible/payment/:basis_points/:number_of_years/:present_value
    ```
 
@@ -101,6 +104,7 @@ The way it should work is:
 
  - If I visit [http://localhost:3000/flexible/random/50/100](http://localhost:3000/flexible/random/50/100), I should see something like
 
+
     > ## Flexible Random Number
     >
     > A random number between 50 and 100 is 87.
@@ -121,10 +125,12 @@ Now, let's build something a little more realistic. **We don't want to type inpu
 
 The way it should work is:
 
+[[DONE]]
  - If I visit the URL [http://localhost:3000/square/new](http://localhost:3000/square/new), I should see a form with a label and an input to enter a number. (Since we're no longer typing into the address bar, we can use decimals and are no longer limited to integers. Yay!)
     - If I submit that form, I should see the square of the number that I entered.
  - If I visit the URL [http://localhost:3000/square_root/new](http://localhost:3000/square_root/new), I should see a form with a label and an input to enter a number.
     - If I submit that form, I should see the square root of the number that I entered.
+<<<<<<MUST FINISH FROM HERE ON>>>>>>
  - If I visit the URL [http://localhost:3000/payment/new](http://localhost:3000/payment/new), I should see a form with labels and inputs to enter three values:
     - An APR (annual percentage rate). (Since our users are no longer limited to integers, we can avoid thinking in basis points. Phew!)
     - A number of _years_ remaining

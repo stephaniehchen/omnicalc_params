@@ -1,0 +1,39 @@
+<h1>
+Payment Results
+</h1>
+<div>
+  <h5>
+  <label> APR
+  </label>
+  <br>
+   <%= @interest_rate %>
+ </h5>
+ </div>
+ <div>
+<h5>
+  <label> Number of years
+  </label>
+    <br>
+    <%= @number_years %>
+</h5>
+</div>
+<div>
+<h5>
+  <label> Principal
+  </label>
+  <br>
+   <%= @pv %>
+</h5>
+</div>
+</div>
+<div>
+<h5>
+  <label> Payment
+  </label>
+  <br>
+   <%= @monthly_payment %>
+</h5>
+</div>
+<h5>
+<a href="/payment/new">Calculate another payment</a>
+</h5>
